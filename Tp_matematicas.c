@@ -779,7 +779,7 @@ int main() {
                     }
 
                     printf("\nResultado: \n");
-                    
+
                     for (int i = 0; i < filasMatriz1; i ++) {
                         printf("\n");
                         for (int j = 0; j < columnasMatriz1; j ++) {
@@ -788,8 +788,6 @@ int main() {
                         }
                     }
                 }
-
-
             }
             break;
 
