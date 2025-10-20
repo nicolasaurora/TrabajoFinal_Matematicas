@@ -5,14 +5,9 @@
 
 int main() {
     
-    int numeroEntero;
-    float numeroDecimal;
-    int tipoDeNumero;
-    int tipoDeNumeroMatriz;
-    int opcion, filasMatriz1, columnasMatriz1, filasMatriz2, columnasMatriz2;
+    int opcion, numeroEntero, tipoDeNumero, tipoDeNumeroMatriz, potenciaMatriz, filasMatriz1, columnasMatriz1, filasMatriz2, columnasMatriz2;
     int matriz1[MAX][MAX], matriz2[MAX][MAX], matrizResultado[MAX][MAX];
-    float matriz1Decimal[MAX][MAX], matriz2Decimal[MAX][MAX], matrizResultadoDecimal[MAX][MAX];
-    int potenciaMatriz;
+    float matriz1Decimal[MAX][MAX], matriz2Decimal[MAX][MAX], matrizResultadoDecimal[MAX][MAX], numeroDecimal;
     
     do {
         
@@ -40,44 +35,44 @@ int main() {
                     printf("\nIngrese la cantidad de filas de la matriz 1: \n");
                     scanf("%d", &filasMatriz1);
                     
-                    if( filasMatriz1 < 1 || filasMatriz1 > 10) {
+                    if (filasMatriz1 < 1 || filasMatriz1 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
                 
-                }while(filasMatriz1 < 1 || filasMatriz1 > 10); 
+                } while(filasMatriz1 < 1 || filasMatriz1 > 10); 
                 
                 do {
                     
                     printf("\nIngrese la cantidad de columnas de la matriz 1: \n");
                     scanf("%d", &columnasMatriz1);
                     
-                    if( columnasMatriz1 < 1 || columnasMatriz1 > 10) {
+                    if (columnasMatriz1 < 1 || columnasMatriz1 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
                 
-                }while(columnasMatriz1 < 1 || columnasMatriz1 > 10);
+                } while(columnasMatriz1 < 1 || columnasMatriz1 > 10);
                 
                 do {
                     
                     printf("\nIngrese la cantidad de filas de la matriz 2: \n");
                     scanf("%d", &filasMatriz2);
                     
-                    if( filasMatriz2 < 1 || filasMatriz2 > 10) {
+                    if (filasMatriz2 < 1 || filasMatriz2 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
                 
-                }while(filasMatriz2 < 1 || filasMatriz2 > 10);
+                } while(filasMatriz2 < 1 || filasMatriz2 > 10);
                 
                 do {
                     
                     printf("\nIngrese la cantidad de columnas de la matriz 2: \n");
                     scanf("%d", &columnasMatriz2);
                     
-                    if( columnasMatriz2 < 1 || columnasMatriz2 > 10) {
+                    if (columnasMatriz2 < 1 || columnasMatriz2 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
             
-                }while(columnasMatriz2 < 1 || columnasMatriz2 > 10);
+                } while(columnasMatriz2 < 1 || columnasMatriz2 > 10);
             
             
                 if (filasMatriz1 != filasMatriz2 || columnasMatriz1 != columnasMatriz2) {
@@ -155,7 +150,7 @@ int main() {
                         
                         for (int i = 0; i < filasMatriz1; i++) {
                             
-                            for(int j = 0; j < columnasMatriz1; j++) {
+                            for (int j = 0; j < columnasMatriz1; j++) {
                                 matrizResultadoDecimal[i][j] = matriz1Decimal[i][j] + matriz2Decimal[i][j];
                             }
                         }
@@ -166,7 +161,7 @@ int main() {
                             printf("\n");
                                 
                             for (int j = 0; j < columnasMatriz1; j++) {
-                            printf("%.2f  ", matrizResultadoDecimal[i][j]);
+                                printf("%.2f  ", matrizResultadoDecimal[i][j]);
                             }
                         }
                     }
@@ -186,44 +181,44 @@ int main() {
                     printf("\nIngrese la cantidad de filas de la matriz 1: \n");
                     scanf("%d", &filasMatriz1);
                     
-                    if( filasMatriz1 < 1 || filasMatriz1 > 10) {
+                    if (filasMatriz1 < 1 || filasMatriz1 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
                 
-                }while(filasMatriz1 < 1 || filasMatriz1 > 10); 
+                } while (filasMatriz1 < 1 || filasMatriz1 > 10); 
                 
                 do {
                     
                     printf("\nIngrese la cantidad de columnas de la matriz 1: \n");
                     scanf("%d", &columnasMatriz1);
                     
-                    if( columnasMatriz1 < 1 || columnasMatriz1 > 10) {
+                    if (columnasMatriz1 < 1 || columnasMatriz1 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
                 
-                }while(columnasMatriz1 < 1 || columnasMatriz1 > 10);
+                } while (columnasMatriz1 < 1 || columnasMatriz1 > 10);
                 
                 do {
                     
                     printf("\nIngrese la cantidad de filas de la matriz 2: \n");
                     scanf("%d", &filasMatriz2);
                     
-                    if( filasMatriz2 < 1 || filasMatriz2 > 10) {
+                    if (filasMatriz2 < 1 || filasMatriz2 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
                 
-                }while(filasMatriz2 < 1 || filasMatriz2 > 10);
+                } while (filasMatriz2 < 1 || filasMatriz2 > 10);
                 
                 do {
                     
                     printf("\nIngrese la cantidad de columnas de la matriz 2: \n");
                     scanf("%d", &columnasMatriz2);
                     
-                    if( columnasMatriz2 < 1 || columnasMatriz2 > 10) {
+                    if (columnasMatriz2 < 1 || columnasMatriz2 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
             
-                }while(columnasMatriz2 < 1 || columnasMatriz2 > 10);
+                } while (columnasMatriz2 < 1 || columnasMatriz2 > 10);
             
             
                 if (filasMatriz1 != filasMatriz2 || columnasMatriz1 != columnasMatriz2) {
@@ -264,7 +259,7 @@ int main() {
                         
                         for (int i = 0; i < filasMatriz1; i++) {
                             
-                            for(int j = 0; j < columnasMatriz1; j++) {
+                            for (int j = 0; j < columnasMatriz1; j++) {
                                 matrizResultado[i][j] = matriz1[i][j] - matriz2[i][j];
                             }
                         }
@@ -301,7 +296,7 @@ int main() {
                         
                         for (int i = 0; i < filasMatriz1; i++) {
                             
-                            for(int j = 0; j < columnasMatriz1; j++) {
+                            for (int j = 0; j < columnasMatriz1; j++) {
                                 matrizResultadoDecimal[i][j] = matriz1Decimal[i][j] - matriz2Decimal[i][j];
                             }
                         }
@@ -312,7 +307,7 @@ int main() {
                             printf("\n");
                                 
                             for (int j = 0; j < columnasMatriz1; j++) {
-                            printf("%.2f  ", matrizResultadoDecimal[i][j]);
+                                printf("%.2f  ", matrizResultadoDecimal[i][j]);
                             }
                         }
                     }
@@ -332,44 +327,44 @@ int main() {
                     printf("\nIngrese la cantidad de filas de la matriz 1: \n");
                     scanf("%d", &filasMatriz1);
                     
-                    if( filasMatriz1 < 1 || filasMatriz1 > 10) {
+                    if (filasMatriz1 < 1 || filasMatriz1 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
                 
-                }while(filasMatriz1 < 1 || filasMatriz1 > 10); 
+                } while (filasMatriz1 < 1 || filasMatriz1 > 10); 
                 
                 do {
                     
                     printf("\nIngrese la cantidad de columnas de la matriz 1: \n");
                     scanf("%d", &columnasMatriz1);
                     
-                    if( columnasMatriz1 < 1 || columnasMatriz1 > 10) {
+                    if (columnasMatriz1 < 1 || columnasMatriz1 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
                 
-                }while(columnasMatriz1 < 1 || columnasMatriz1 > 10);
+                } while (columnasMatriz1 < 1 || columnasMatriz1 > 10);
                 
                 do {
                     
                     printf("\nIngrese la cantidad de filas de la matriz 2: \n");
                     scanf("%d", &filasMatriz2);
                     
-                    if( filasMatriz2 < 1 || filasMatriz2 > 10) {
+                    if (filasMatriz2 < 1 || filasMatriz2 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
                 
-                }while(filasMatriz2 < 1 || filasMatriz2 > 10);
+                } while (filasMatriz2 < 1 || filasMatriz2 > 10);
                 
                 do {
                     
                     printf("\nIngrese la cantidad de columnas de la matriz 2: \n");
                     scanf("%d", &columnasMatriz2);
                     
-                    if( columnasMatriz2 < 1 || columnasMatriz2 > 10) {
+                    if (columnasMatriz2 < 1 || columnasMatriz2 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
             
-                }while(columnasMatriz2 < 1 || columnasMatriz2 > 10);
+                } while (columnasMatriz2 < 1 || columnasMatriz2 > 10);
             
             
                 if (columnasMatriz1 != filasMatriz2) {
@@ -411,7 +406,7 @@ int main() {
                         
                         for (int i = 0; i < filasMatriz1; i++) {
                             
-                            for(int j = 0; j < columnasMatriz2; j++) {
+                            for (int j = 0; j < columnasMatriz2; j++) {
                                 matrizResultado[i][j] = 0;
                             }
                         }
@@ -429,10 +424,10 @@ int main() {
                         printf("\nResultado: \n");
 
                         for (int i = 0; i < filasMatriz1; i++) {
-                            printf("\n");
+                                printf("\n");
                                 
                             for (int j = 0; j < columnasMatriz2; j++) {
-                            printf("%d  ", matrizResultado[i][j]);
+                                printf("%d  ", matrizResultado[i][j]);
                             }
                         }
                     
@@ -458,7 +453,7 @@ int main() {
                         
                         for (int i = 0; i < filasMatriz1; i++) {
                             
-                            for(int j = 0; j < columnasMatriz2; j++) {
+                            for (int j = 0; j < columnasMatriz2; j++) {
                                 matrizResultadoDecimal[i][j] = 0;
                             }
                         }
@@ -479,7 +474,7 @@ int main() {
                             printf("\n");
                                 
                             for (int j = 0; j < columnasMatriz2; j++) {
-                            printf("%.2f  ", matrizResultadoDecimal[i][j]);
+                                printf("%.2f  ", matrizResultadoDecimal[i][j]);
                             }
                         }
                     }
@@ -497,21 +492,21 @@ int main() {
                     printf("\nIngrese la cantidad de filas de la matriz: \n");
                     scanf("%d", &filasMatriz1);
                         
-                    if( filasMatriz1 < 1 || filasMatriz1 > 10) {
+                    if (filasMatriz1 < 1 || filasMatriz1 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
                     
-                }while(filasMatriz1 < 1 || filasMatriz1 > 10); 
+                } while (filasMatriz1 < 1 || filasMatriz1 > 10); 
                     
                 do {
                     printf("\nIngrese la cantidad de columnas de la matriz: \n");
                     scanf("%d", &columnasMatriz1);
                         
-                    if( columnasMatriz1 < 1 || columnasMatriz1 > 10) {
+                    if (columnasMatriz1 < 1 || columnasMatriz1 > 10) {
                         printf("Debe ingresar un numero entre 1 y 10");
                     }
                     
-                }while(columnasMatriz1 < 1 || columnasMatriz1 > 10);
+                } while (columnasMatriz1 < 1 || columnasMatriz1 > 10);
 
                 if (filasMatriz1 == columnasMatriz1) {
 
@@ -548,7 +543,7 @@ int main() {
                                 
                                 for (int j = 0; j < columnasMatriz1; j++) {
                                     if ( i == j) {
-                                    matrizResultado[i][j] = 1; 
+                                        matrizResultado[i][j] = 1; 
                                     } else {
                                         matrizResultado[i][j] = 0;
                                     }
@@ -560,7 +555,7 @@ int main() {
                             
                             for (int i = 0; i < filasMatriz1; i++) {
                             
-                                for(int j = 0; j < columnasMatriz1; j++) {
+                                for (int j = 0; j < columnasMatriz1; j++) {
                                     matrizResultado[i][j] = 0;
                                 }
                             }
@@ -583,7 +578,7 @@ int main() {
                             printf("\n");
                                 
                             for (int j = 0; j < columnasMatriz1; j++) {
-                            printf("%d  ", matrizResultado[i][j]);
+                                printf("%d  ", matrizResultado[i][j]);
                             }
                         }
 
@@ -594,8 +589,8 @@ int main() {
                         for (int i = 0; i < filasMatriz1; i++) {
                             
                             for (int j = 0; j < columnasMatriz1; j++) {
-                            printf("\nIngrese el valor de la posicion %d-%d de la matriz 1: \n", i, j);
-                            scanf("%f", &matriz1Decimal[i][j]);
+                                printf("\nIngrese el valor de la posicion %d-%d de la matriz 1: \n", i, j);
+                                scanf("%f", &matriz1Decimal[i][j]);
                             }
                         }
                     
@@ -608,7 +603,7 @@ int main() {
                                 
                                 for (int j = 0; j < columnasMatriz1; j++) {
                                     if ( i == j) {
-                                    matrizResultadoDecimal[i][j] = 1; 
+                                        matrizResultadoDecimal[i][j] = 1; 
                                     } else {
                                         matrizResultadoDecimal[i][j] = 0;
                                     }
@@ -620,7 +615,7 @@ int main() {
                             
                             for (int i = 0; i < filasMatriz1; i++) {
                             
-                                for(int j = 0; j < columnasMatriz1; j++) {
+                                for (int j = 0; j < columnasMatriz1; j++) {
                                     matrizResultadoDecimal[i][j] = 0;
                                 }
                             }
@@ -704,14 +699,14 @@ int main() {
                 if (tipoDeNumero == 1) {
                     scanf("%d", &numeroEntero);
                     for (int i = 0; i < filasMatriz1; i ++) {
-                        for ( int j = 0; j < columnasMatriz1; j ++) {
+                        for (int j = 0; j < columnasMatriz1; j ++) {
                             matrizResultado[i][j] = matriz1[i][j] * numeroEntero;
                         }
                     }
                     printf("\nResultado: \n");
-                    for ( int i = 0; i < filasMatriz1; i ++) {
+                    for (int i = 0; i < filasMatriz1; i ++) {
                         printf("\n");
-                        for ( int j = 0; j < columnasMatriz1; j ++) {
+                        for (int j = 0; j < columnasMatriz1; j ++) {
                             printf("%d", matrizResultado[i][j]);
                             printf(" ");
                         }
@@ -720,14 +715,14 @@ int main() {
                 } else {
                     scanf("%f", &numeroDecimal);
                     for (int i = 0; i < filasMatriz1; i ++) {
-                        for ( int j = 0; j < columnasMatriz1; j ++) {
+                        for (int j = 0; j < columnasMatriz1; j ++) {
                             matrizResultadoDecimal[i][j] = matriz1[i][j] * numeroDecimal;
                         }
                     }
                     printf("\nResultado: \n");
-                    for ( int i = 0; i < filasMatriz1; i ++) {
+                    for (int i = 0; i < filasMatriz1; i ++) {
                         printf("\n");
-                        for ( int j = 0; j < columnasMatriz1; j ++) {
+                        for (int j = 0; j < columnasMatriz1; j ++) {
                             printf("%.2f", matrizResultadoDecimal[i][j]);
                             printf(" ");
                         }
@@ -739,11 +734,11 @@ int main() {
             } else {
 
                 for (int i = 0; i < filasMatriz1; i ++) {
-                for (int j  = 0; j < columnasMatriz1; j ++) {
-                    printf("\nIngrese el valor de la posicion %d - %d de la matriz: \n", i + 1, j + 1);
-                    scanf("%f", &matriz1Decimal[i][j]);
+                    for (int j  = 0; j < columnasMatriz1; j ++) {
+                        printf("\nIngrese el valor de la posicion %d - %d de la matriz: \n", i + 1, j + 1);
+                        scanf("%f", &matriz1Decimal[i][j]);
+                        }
                     }
-                }
 
                 do {    
                     printf("\nQue valor de escalar desea elegir?\n");
@@ -762,15 +757,15 @@ int main() {
                 if (tipoDeNumero == 1) {
                     scanf("%d", &numeroEntero);
                     for (int i = 0; i < filasMatriz1; i ++) {
-                        for ( int j = 0; j < columnasMatriz1; j ++) {
+                        for (int j = 0; j < columnasMatriz1; j ++) {
                             matrizResultadoDecimal[i][j] = matriz1Decimal[i][j] * numeroEntero;
                         }
                     }
                     printf("\nResultado: \n");
-                    for ( int i = 0; i < filasMatriz1; i ++) {
+                    for (int i = 0; i < filasMatriz1; i ++) {
                         printf("\n");
-                        for ( int j = 0; j < columnasMatriz1; j ++) {
-                             printf("%.2f", matrizResultadoDecimal[i][j]);
+                        for (int j = 0; j < columnasMatriz1; j ++) {
+                            printf("%.2f", matrizResultadoDecimal[i][j]);
                             printf(" ");
                         }
                     }
@@ -778,14 +773,16 @@ int main() {
                 } else {
                     scanf("%f", &numeroDecimal);
                     for (int i = 0; i < filasMatriz1; i ++) {
-                        for ( int j = 0; j < columnasMatriz1; j ++) {
+                        for (int j = 0; j < columnasMatriz1; j ++) {
                             matrizResultadoDecimal[i][j] = matriz1Decimal[i][j] * numeroDecimal;
                         }
                     }
+
                     printf("\nResultado: \n");
-                    for ( int i = 0; i < filasMatriz1; i ++) {
+                    
+                    for (int i = 0; i < filasMatriz1; i ++) {
                         printf("\n");
-                        for ( int j = 0; j < columnasMatriz1; j ++) {
+                        for (int j = 0; j < columnasMatriz1; j ++) {
                             printf("%.2f", matrizResultadoDecimal[i][j]);
                             printf(" ");
                         }
